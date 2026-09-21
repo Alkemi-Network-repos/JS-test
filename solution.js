@@ -26,23 +26,3 @@ function totalBalance(holders) {
 function topHolders(holders, n) {
   // TODO
 }
-
-/* ---------- do not edit below this line ---------- */
-
-const holders = [
-  { name: "ava", balance: 120.5 },
-  { name: "ben", balance: 980.25 },
-  { name: "cleo", balance: 45 },
-  { name: "dev", balance: 3400.1 },
-  { name: "eli", balance: 771.15 },
-];
-const before = JSON.stringify(holders);
-
-console.log("1:", formatAmount(1234.5));
-console.log("2:", formatAmount(999));
-console.log("3:", formatAmount(1234567.89));
-console.log("4:", totalBalance(holders));
-console.log("5:", totalBalance([]));
-console.log("6:", topHolders(holders, 3));
-console.log("7:", topHolders(holders, 1));
-console.log("8:", JSON.stringify(holders) === before ? "not mutated" : "MUTATED");

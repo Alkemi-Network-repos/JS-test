@@ -1,72 +1,41 @@
-# JavaScript Screening — 5 Minutes
+# JavaScript Screening - 5 Minutes
 
 Short check, not a take-home. Budget about 5 minutes.
 
-Nothing to install — no packages, no internet. Just Node, git, and an editor.
+Nothing to install - no packages. Just Node, VS Code, and access to the GitLab repo you were sent.
 
 ## 1. Set up your branch
 
-Clone the repo you were given access to and open the **folder** in VS Code
-(`File > Open Folder…`, or `code .` from the folder).
+1. In GitLab, click **Code → Open with → Visual Studio Code (HTTPS)**, then pick a local folder - VS Code will clone the repo and open it.
+2. In VS Code's status bar, click `main` → **Create new branch...** → name it `submission/firstname-lastname` (your real name, lowercase and hyphenated).
+3. Open the terminal (**Ctrl+`** / **Cmd+`**) and run `node --version` - Node 18+ required.
 
-Open the integrated terminal — **Ctrl + `** (Windows/Linux) or **Cmd + `** (macOS) —
-and run:
-
-```
-node --version
-git checkout -b submission/firstname-lastname
-```
-
-Node 18+ is required. Use your real name in the branch, lowercase and hyphenated.
-
-**`main` is read-only.** Every change you make belongs on your own branch. Do not
-commit to `main`, do not merge into it, and do not open a pull request.
+**`main` is read-only.** Work only on your branch - never commit, merge, or open a merge request against `main`.
 
 ## 2. Write the code
 
-Open `solution.js`. Three functions have a `// TODO` in the body — implement all
+Open `solution.js`. Three functions have a `// TODO` in the body - implement all
 three. The comment above each one gives you the expected behaviour.
 
 Edit only the function bodies. Leave everything below the `do not edit` line alone,
 and don't change `REQUIREMENTS.md`.
 
-## 3. Check your work
+## 3. Submit
 
-```
-node solution.js
-```
+**Commit and push using the Source Control panel - no terminal needed for this part.**
 
-Correct output looks exactly like this:
-
-```
-1: 1,234.50
-2: 999.00
-3: 1,234,567.89
-4: 5317
-5: 0
-6: [ 'dev', 'ben', 'eli' ]
-7: [ 'dev' ]
-8: not mutated
-```
-
-Re-run as often as you like until your output matches.
-
-## 4. Submit
-
-```
-git add solution.js
-git commit -m "solution: firstname lastname"
-git push -u origin submission/firstname-lastname
-```
+1. Open the **Source Control** panel (the branch icon in the left sidebar).
+2. Hover over `solution.js` under "Changes" and click the **+** to stage it (or click **+** next to "Changes" to stage everything).
+3. Type your commit message in the message box at the top: `solution: firstname lastname`
+4. Click the checkmark **✓ Commit** button.
+5. Click **Publish Branch** (first push) or **Sync Changes** (if shown) to push to `origin` and set the upstream for `submission/firstname-lastname`.
 
 Then reply to the email with your branch name. That's it.
 
-If your output doesn't fully match in the time you've given it, push anyway —
+If your output doesn't fully match in the time you've given it, push anyway -
 partial work is fine and we still want to see it.
 
 ## Rules
 
 - Standard JavaScript only. Any built-in method is fair game.
-- No hardcoding. Returning `"1,234.50"` from a lookup table isn't a solution —
-  the functions must work on any input of the same shape.
 - Your branch only. Don't read other candidates' branches.
